@@ -1,0 +1,152 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Styles */
+header {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 20px;
+}
+
+.school-logo {
+    max-width: 150px; /* Adjust as needed */
+    height: auto;
+}
+
+.binary-sphere {
+    width: 100px;
+    height: 100px;
+    background-color: #008080;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+/* Courses Section */
+#courses {
+    background-color: #ffe4e1;
+    padding: 20px;
+}
+
+.course-slider {
+    position: relative;
+    overflow: hidden;
+    height: 300px; /* Adjust this value based on your design preferences */
+}
+
+.course-container {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 100%; /* Adjust based on the number of courses (10 courses * 100%) */
+}
+
+.course-item img {
+    width: 100%;
+    height: 200px; /* Adjust this value as needed */
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.course-item {
+    flex: 0 0 20%;
+    margin: 0 10px;
+    box-sizing: border-box;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.course-item:hover {
+    transform: scale(1.1);
+}
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 10;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+@media (max-width: 768px) {
+    .course-item {
+        flex: 0 0 100%;
+    }
+
+    .course-container {
+        width: 1000%; /* 10 courses * 100% */
+    }
+}
+
+/* Team Section */
+#team {
+    padding: 20px;
+    background-color: #e6edf1;
+}
+
+.team-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.team-member {
+    text-align: center;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover img {
+    transform: scale(1.1);
+}
+
+/* Video Section */
+#video-section {
+    padding: 20px;
+    text-align: center;
+}
+
+#featured-video {
+    max-width: 60%;
+    height: auto;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-icon {
+    color: white;
+    text-decoration: none;
+}
